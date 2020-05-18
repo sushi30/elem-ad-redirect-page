@@ -12,6 +12,7 @@
     outline: none
 }
 .App .photo {
+    cursor: pointer;
     padding: 15px;
 }
 
