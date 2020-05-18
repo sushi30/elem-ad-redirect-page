@@ -1,4 +1,9 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In order to deploy to the website:
+1.checkout gh-graph branch (this is the branch that updates it)
+2.run npm build
+3.run npm deploy
+
+
 
 ## Available Scripts
 
