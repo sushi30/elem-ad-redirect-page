@@ -6,19 +6,25 @@ export default function Input({ onSubmit }: any) {
 
   return (
     <div>
-      <input
-        value={value}
-        type="text"
-        onChange={(e) => setValue(e.target.value)}
-      />
-      <button
-        onClick={() => {
-          onSubmit(value);
-          setValue("");
-        }}
-      >
-        שלח
-      </button>
+      <form>
+        <input
+          value={value}
+          type="text"
+          onChange={(e) => setValue(e.target.value)}
+        />
+        <button
+          type="submit"
+          onClick={(e) => {
+            e.preventDefault();
+            if (value.length > 0) {
+              onSubmit(value);
+              setValue("");
+            }
+          }}
+        >
+          שלח
+        </button>
+      </form>
     </div>
   );
 }
