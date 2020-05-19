@@ -9,9 +9,10 @@ export default function Message({ sender, content, time }: any) {
         direction: "rtl",
         textAlign: "right",
         marginBottom: 8,
-        maxWidth: "100%"
+        maxWidth: "100%",
       }}
     >
+      <div style={{ width: 24 }} />
       <div
         style={{
           borderRadius: 8,
