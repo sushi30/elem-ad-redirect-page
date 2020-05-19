@@ -13,7 +13,7 @@ export default function Message({ sender, content, time, last }: any) {
         textAlign: "right",
         marginBottom: 24,
         maxWidth: "100%",
-        [sender == Sender.WEBSITE ? "paddingLeft" : "paddingRight"]: 8,
+        [sender == Sender.WEBSITE ? "paddingLeft" : "paddingRight"]: 16,
       }}
     >
       <div style={{ width: 24 }} />
