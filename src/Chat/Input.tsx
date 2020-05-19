@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Sender } from "./index";
 
-export default function Input({ onSubmit }: any) {
+export default function Input({ onSubmit, placeholder }: any) {
   const [value, setValue] = useState("");
   const [submitting, setSubmitting] = useState(false);
 
@@ -9,6 +9,7 @@ export default function Input({ onSubmit }: any) {
     <div>
       <form>
         <input
+          placeholder={placeholder}
           disabled={submitting}
           value={value}
           type="text"
