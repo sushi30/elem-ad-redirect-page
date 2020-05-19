@@ -9,7 +9,7 @@ export default function Message({ sender, content, time }: any) {
         direction: "rtl",
         textAlign: "right",
         float: sender == Sender.VISITOR ? "left" : "right",
-        maxWidth: "50%",
+        maxWidth: "90%",
       }}
     >
       <p
