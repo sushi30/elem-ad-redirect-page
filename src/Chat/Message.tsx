@@ -1,9 +1,12 @@
 import React from "react";
 import { Sender } from "./index";
+import FadeDiv from "./FadeDiv";
 
-export default function Message({ sender, content, time }: any) {
+export default function Message({ sender, content, time, last }: any) {
   return (
-    <div
+    <FadeDiv
+      in={true}
+      appear={last}
       style={{
         fontSize: 16,
         direction: "rtl",
@@ -24,6 +27,6 @@ export default function Message({ sender, content, time }: any) {
       >
         {content}
       </div>
-    </div>
+    </FadeDiv>
   );
 }

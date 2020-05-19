@@ -23,11 +23,14 @@ export default function Messages({ messages }: any) {
         background: "white",
         color: "black",
         overflow: "auto",
-        padding: 16
+        padding: 16,
       }}
     >
-      {messages.map(({ sender, time, content }: any) => (
-        <Message {...{ sender, time, content }} />
+      {messages.map(({ sender, time, content }: any, key: number) => (
+        <Message
+          {...{ sender, time, content, key }}
+          last={key + 1 == messages.length}
+        />
       ))}
     </div>
   );
