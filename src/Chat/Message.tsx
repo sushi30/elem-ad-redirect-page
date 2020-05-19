@@ -8,18 +8,20 @@ export default function Message({ sender, content, time }: any) {
         fontSize: 16,
         direction: "rtl",
         textAlign: "right",
-        float: sender == Sender.VISITOR ? "left" : "right",
-        maxWidth: "90%",
+        marginBottom: 8,
+        maxWidth: "100%"
       }}
     >
-      <p
+      <div
         style={{
+          borderRadius: 8,
+          float: sender == Sender.VISITOR ? "left" : "right",
           padding: 8,
           background: sender == Sender.WEBSITE ? "aqua" : "gainsboro",
         }}
       >
         {content}
-      </p>
+      </div>
     </div>
   );
 }

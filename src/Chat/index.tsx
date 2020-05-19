@@ -16,10 +16,9 @@ export default function Chat({ style }: any) {
     <div
       style={{
         width: 300,
-        height: 400,
+        height: 350,
         background: "white",
         color: "black",
-        overflow: "auto",
         direction: "rtl",
         position: "absolute",
         bottom: "5vh",

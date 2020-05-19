@@ -17,13 +17,13 @@ export default function Messages({ messages }: any) {
     <div
       id="messageBox"
       style={{
-        width: "100%",
-        height: 350,
+        height: "calc(100% - 80px)",
         display: "flex",
         flexDirection: "column",
         background: "white",
         color: "black",
         overflow: "auto",
+        padding: 16
       }}
     >
       {messages.map(({ sender, time, content }: any) => (
